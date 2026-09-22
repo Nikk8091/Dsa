@@ -45,12 +45,23 @@ class First{
        System.out.println(" ");
         }
     }
-
+    private static void pattern6(int n) {
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                if (i == 0 || i == n - 1 || j == 0 || j == n - 1) {
+                    System.out.print("* ");
+                } else {
+                    System.out.print("  ");
+                }
+            }
+            System.out.println(" ");
+        }
+    }
 public static void main(String[] args) {
         System.out.print("Enter the number of rows: ");
         Scanner sc=new Scanner(System.in);
 
         int n =sc.nextInt();
-  pattern5(n);
+   pattern6(n);
 }
 }
