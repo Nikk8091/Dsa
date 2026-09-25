@@ -57,11 +57,24 @@ class First{
             System.out.println(" ");
         }
     }
+    private static void pattern7(int n){
+        for(int i=0;i<2*n-1;i++){
+            for(int j=0;j<2*n;j++){
+              if(((j<=i || j>=2*n-i-1) && i<n) || ((j<2*n-i-1 || j>i) && i>=n)){
+                  System.out.print("* ");
+              }else{
+                  System.out.print("  ");
+              }
+            }
+            System.out.println(" ");
+        }
+    }
+
 public static void main(String[] args) {
         System.out.print("Enter the number of rows: ");
         Scanner sc=new Scanner(System.in);
 
         int n =sc.nextInt();
-   pattern6(n);
+   pattern7(n);
 }
 }
