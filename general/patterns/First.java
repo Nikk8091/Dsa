@@ -70,12 +70,48 @@ class First{
             System.out.println(" ");
         }
     }
+    private static void pattern8(int n){
+        for(int i=0;i<n;i++){
 
+            for(int j=0;j<n;j++){
+                if(j>=n-i-1) {
+                    System.out.print("* ");
+                }else {
+                    System.out.print("  ");
+                }
+            }
+            System.out.println(" ");
+
+        }
+    }
+private static void pattern9(int n){
+        for(int i=0;i<n;i++){
+            for(int j=0;j<i+1;j++){
+                System.out.print((i+j+1)%2);
+            }
+            System.out.println(" ");
+        }
+}
+private static void pattern10(int n){
+        for (int i = 0; i <n; i++) {
+            for (int j = 0; j <2*n-1; j++) {
+                if(j>=n-i-1 && j<2*n-i-1){
+                    System.out.print("* ");
+                }else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.println(" ");
+        }
+}
+private static void pattern11(int n){
+
+    }
 public static void main(String[] args) {
         System.out.print("Enter the number of rows: ");
         Scanner sc=new Scanner(System.in);
 
         int n =sc.nextInt();
-   pattern7(n);
+   pattern10(n);
 }
 }
